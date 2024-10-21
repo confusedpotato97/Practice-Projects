@@ -1,5 +1,7 @@
 import React from 'react'
 import HeroImage from '../../assets/Hero-image.png'
+import { SlideUp } from "../../utility/animation";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -15,9 +17,14 @@ const Hero = () => {
                     </div>
                 </div> 
             </div>
-            <div className='flex items-center justify-center'>
+            <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+
+            className='flex items-center justify-center'>
                 <img src={HeroImage} alt='Collage of Supplements'></img>
-            </div>
+            </motion.div>
            
         </div>
     </section>
