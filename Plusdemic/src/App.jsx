@@ -3,6 +3,8 @@ import NavBar from './components/NavBar/NavBar'
 import Hero from './components/Hero/Hero'
 import HowItHelps from './components/HowItHelps/HowItHelps'
 import Uses from './components/Uses/Uses'
+import Trust from './components/Trust/Trust'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Hero/>
       <HowItHelps/>
       <Uses/>
+      <Trust/>
+      <Footer/>
     </main>
   )
 }
